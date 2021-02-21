@@ -13,6 +13,10 @@ def getPlayerDocument(p, cursor):
     player['name'] = f"{player['nameFirst']} {player['nameLast']}"
     player['batting'] = []
     player['fielding'] = []
+    if 'debut' in player and player['debut'] == '':
+        player['debut'] = None
+    if 'finalGame' in player and player['finalGame'] == '':
+        player['finalGame'] = None
     cursor.execute(
         f"SELECT * FROM batting where playerID = '{player['playerID']}'")
     battingLines = cursor.fetchall()
