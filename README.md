@@ -2,7 +2,7 @@
 
 Python utilities to convert the Lahman baseball database to JSON format and push to Elasticsearch. Baseball statistics provided by [Sean Lahman's baseball database](http://www.seanlahman.com/baseball-archive/statistics/).
 
-Running this program will add 20,000+ documents to an Elasticsearch index which can be used for searching or data analysis
+Running this program will add 20,000+ documents to an Elasticsearch index which can be used for searching or data analysis. Currently, players are associated with data from `people.csv` and `batting.csv`. 
 
 ## Steps
 Create a Python virtual environment:
