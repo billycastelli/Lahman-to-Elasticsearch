@@ -27,8 +27,8 @@ If all goes well, you will be able to view your documents by running a curl agai
 
 ## How the program works
   Steps:
-  - An SQLite database is created along with tables defined in the `/sql` directory
+  - An SQLite database is created - tables are defined in the `/sql` directory
   - CSV data from the Lahman Databae is imported into the local SQLite database 
-  - SQL queries obtain base player information. For each player, their career statistics are SELECTed, cleaned, and put into a single document.
-  - All player data put into a JSON file
+  - SQL queries obtain base player information. For each player, career statistics are SELECTed, cleaned, and put into a single document.
+  - All player data is written to a JSON file
   - Data from the JSON file is batch pushed to Elasticserch
