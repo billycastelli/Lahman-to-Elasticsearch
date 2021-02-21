@@ -29,4 +29,5 @@ def careerBattingBase():
         'sh': 0,
         'sf': 0,
         'gidp': 0,
+        'avg': '0.00'
     }
